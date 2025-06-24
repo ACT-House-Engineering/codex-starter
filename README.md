@@ -38,3 +38,11 @@ Write test for and implement the follow feature: ...
 
 *   **Codex Documentation:** https://platform.openai.com/docs/codex
 *   **Codex Docker Image:** https://github.com/openai/codex-universal
+## Astro
+
+This project uses [Astro](https://astro.build) and is ready for Netlify deployment.
+
+```sh
+pnpm run dev     # start local server
+pnpm run build   # build for production
+```
