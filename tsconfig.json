@@ -1,0 +1,11 @@
+{
+	"compilerOptions": {
+		"strict": true,
+		"jsx": "preserve",
+		"moduleResolution": "bundler",
+		"allowJs": true,
+		"types": ["astro/client"],
+		"target": "ESNext"
+	},
+	"extends": "astro/tsconfigs/base"
+}
