@@ -4,7 +4,8 @@
 	"description": "",
 	"main": "index.js",
 	"scripts": {
-		"lint": "biome check --write"
+		"lint": "biome check --write",
+		"typecheck": "tsc --noEmit"
 	},
 	"keywords": [],
 	"author": "",
