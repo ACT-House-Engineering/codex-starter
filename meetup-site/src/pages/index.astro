@@ -1,0 +1,41 @@
+/** @ai */
+---
+const _meetup = {
+	title: 'Tulsa Web Devs Meetup',
+	topic: 'Agent Coding Crash Course: Managing your AI Team Part 2',
+	description:
+		'Transform your coding process with an AI coworker in three key ideas: clear collaboration guidelines, smart interaction modes, and embedding continuous learning into your code.',
+	guidelines: [
+		'Clear Guidelines: Set up user and project rules to make AI interactions effective.',
+		'Choosing Interaction Modes: Understand when to use chat auto-run vs. manual model selection.',
+		'Embedding AI Behavior: Integrate linting rules, comprehensive comments, READMEs, tests, and runtime assertions right into your code.',
+		'Iterative Improvement: Document new insights continuously, turning your code into a long-term memory for smarter, future-focused development.',
+	],
+	location: '7 N Cheyenne (Beside Atlas School, across from Gradient)',
+	date: 'June 24',
+	time: '6:00 PM CST',
+	speaker: 'Sam Carlton',
+};
+---
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>{_meetup.title}</title>
+  </head>
+  <body>
+    <main style="font-family: sans-serif; padding: 2rem; max-width: 800px; margin: auto;">
+      <h1>{_meetup.title}</h1>
+      <p>{_meetup.topic}</p>
+      <p>{_meetup.description}</p>
+      <ul>
+        {_meetup.guidelines.map(g => <li>{g}</li>)}
+      </ul>
+      <h2>Event Details</h2>
+      <p><strong>Location:</strong> {_meetup.location}</p>
+      <p><strong>Date &amp; Time:</strong> {_meetup.date} · {_meetup.time}</p>
+      <p><strong>Speaker:</strong> {_meetup.speaker}</p>
+      <p>🍕 Pizza & drinks will be provided (please RSVP so we can plan the order)</p>
+    </main>
+  </body>
+</html>
