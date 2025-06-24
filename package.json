@@ -4,10 +4,18 @@
 	"description": "",
 	"main": "index.js",
 	"scripts": {
-		"lint": "biome check --write"
+		"lint": "biome check --write",
+		"dev": "astro dev",
+		"build": "astro build",
+		"preview": "astro preview"
 	},
 	"keywords": [],
 	"author": "",
 	"license": "ISC",
-	"packageManager": "pnpm@10.11.0"
+	"packageManager": "pnpm@10.11.0",
+	"devDependencies": {
+		"@astrojs/netlify": "^6.4.0",
+		"@biomejs/biome": "^2.0.5",
+		"astro": "^5.10.1"
+	}
 }
