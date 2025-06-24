@@ -1,0 +1,11 @@
+[build]
+publish = "meetup-site/dist"
+command = "cd meetup-site && pnpm install --frozen-lockfile && pnpm build"
+
+[build.environment]
+NODE_VERSION = "20"
+
+[[redirects]]
+from = "/*"
+to = "/index.html"
+status = 200
