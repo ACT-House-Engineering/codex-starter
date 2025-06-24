@@ -38,3 +38,8 @@ Write test for and implement the follow feature: ...
 
 *   **Codex Documentation:** https://platform.openai.com/docs/codex
 *   **Codex Docker Image:** https://github.com/openai/codex-universal
+
+## Deploying to Netlify
+
+This project now uses [Astro](https://astro.build) and includes the Netlify adapter.
+Run `pnpm build` to generate a production build. When pushed to Netlify, the `netlify.toml` configuration will automatically trigger the deployment.

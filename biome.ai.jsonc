@@ -4,9 +4,6 @@
   "extends": ["./biome.jsonc"],
   "linter": {
     "rules": {
-      // Activate HARD MODE
-      // https://v1.biomejs.dev/reference/configuration/#linterrulesall
-      "all": true,
       "correctness": {
         "useImportExtensions": "off"
       }
@@ -14,12 +11,11 @@
   },
   "overrides": [
     {
-      "include": ["scripts/**"],
+      "includes": ["scripts/**"],
       "linter": {
         "rules": {
           "suspicious": {
-            "noConsole": "off",
-            "noConsoleLog": "off"
+            "noConsole": "off"
           }
         }
       }
