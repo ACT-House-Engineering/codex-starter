@@ -1,0 +1,13 @@
+{
+  "name": "meetup-astro",
+  "type": "module",
+  "scripts": {
+    "dev": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview"
+  },
+  "dependencies": {
+    "astro": "^4.0.0",
+    "@astrojs/netlify": "^5.0.0"
+  }
+}
