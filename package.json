@@ -1,19 +1,23 @@
 {
-	"name": "codex-starter",
-	"version": "1.0.0",
-	"description": "",
-	"main": "index.js",
-	"scripts": {
-		"lint": "biome check --write",
-		"typecheck": "tsc --noEmit",
-		"biome:changes": "git diff --name-only HEAD | grep -E '\\.(js|jsx|ts|tsx|json|jsonc)$' | xargs -r biome",
-		"lint:changes": "pnpm biome:changes lint",
-		"format:changes": "pnpm biome:changes format --write",
-		"check:changes": "pnpm biome:changes check --apply",
-		"ai-lint:changes": "pnpm biome:changes lint --config-path ./biome.ai.jsonc"
-	},
-	"keywords": [],
-	"author": "",
-	"license": "ISC",
-	"packageManager": "pnpm@10.11.0"
+  "name": "codex-starter",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "lint": "biome check --write",
+    "typecheck": "tsc --noEmit",
+    "biome:changes": "git diff --name-only HEAD | grep -E '\\.(js|jsx|ts|tsx|json|jsonc)$' | xargs -r biome",
+    "lint:changes": "pnpm biome:changes lint",
+    "format:changes": "pnpm biome:changes format --write",
+    "check:changes": "pnpm biome:changes check --apply",
+    "ai-lint:changes": "pnpm biome:changes lint --config-path ./biome.ai.jsonc"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "packageManager": "pnpm@10.11.0",
+  "devDependencies": {
+    "biome": "^0.3.3",
+    "typescript": "^5.4.0"
+  }
 }
