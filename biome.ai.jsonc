@@ -1,28 +1,26 @@
 // Same as biome.jsonc but stricter to make AI write better code
 {
-  "$schema": "./node_modules/@biomejs/biome/configuration_schema.json",
-  "extends": ["./biome.jsonc"],
-  "linter": {
-    "rules": {
-      // Activate HARD MODE
-      // https://v1.biomejs.dev/reference/configuration/#linterrulesall
-      "all": true,
-      "correctness": {
-        "useImportExtensions": "off"
-      }
-    }
-  },
-  "overrides": [
-    {
-      "include": ["scripts/**"],
-      "linter": {
-        "rules": {
-          "suspicious": {
-            "noConsole": "off",
-            "noConsoleLog": "off"
-          }
-        }
-      }
-    }
-  ]
+	"$schema": "https://biomejs.dev/schemas/2.0.5/schema.json",
+	"extends": ["./biome.jsonc"],
+	"linter": {
+		"rules": {
+			// Activate HARD MODE
+			"recommended": true,
+			"correctness": {
+				"useImportExtensions": "off"
+			}
+		}
+	},
+	"overrides": [
+		{
+			"includes": ["scripts/**"],
+			"linter": {
+				"rules": {
+					"suspicious": {
+						"noConsole": "off"
+					}
+				}
+			}
+		}
+	]
 }
