@@ -6,6 +6,9 @@
 	"scripts": {
 		"lint": "biome check --write",
 		"typecheck": "tsc --noEmit",
+		"dev": "astro dev",
+		"build": "astro build",
+		"preview": "astro preview",
 		"biome:changes": "git diff --name-only HEAD | grep -E '\\.(js|jsx|ts|tsx|json|jsonc)$' | xargs -r biome",
 		"lint:changes": "pnpm biome:changes lint",
 		"format:changes": "pnpm biome:changes format --write",
@@ -15,5 +18,12 @@
 	"keywords": [],
 	"author": "",
 	"license": "ISC",
-	"packageManager": "pnpm@10.11.0"
+	"packageManager": "pnpm@10.11.0",
+	"devDependencies": {
+		"@astrojs/mdx": "^4.3.0",
+		"@biomejs/biome": "^1.9.4",
+		"@types/node": "^24.0.4",
+		"astro": "^5.10.1",
+		"typescript": "^5.8.3"
+	}
 }
