@@ -1,0 +1,32 @@
+---
+const meetupDate = new Date('2024-06-24T18:00:00-05:00');
+---
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Tulsa Web Devs Meetup</title>
+  </head>
+  <body>
+    <main style="font-family: system-ui; padding: 2rem; max-width: 800px; margin: auto;">
+      <h1>Tulsa Web Devs Meetup</h1>
+      <p>Tulsa Web Devs meetups bring together technologists from across a wide range of languages and disciplines. From back-end development to front-end technologies and web-adjacent fields like data science and civic tech&mdash;we aim to learn, share, build, and grow together.</p>
+      <h2>This Month&rsquo;s Topic</h2>
+      <p><strong>Agent Coding Crash Course: Managing your AI Team Part 2</strong></p>
+      <p>Transform your coding process with an AI coworker in three key ideas: clear collaboration guidelines, smart interaction modes, and embedding continuous learning into your code.</p>
+      <ul>
+        <li><strong>Clear Guidelines:</strong> Set up user and project rules to make AI interactions effective.</li>
+        <li><strong>Choosing Interaction Modes:</strong> Understand when to use chat auto-run vs. manual model selection.</li>
+        <li><strong>Embedding AI Behavior:</strong> Integrate linting rules, comments, READMEs, tests, and assertions right into your code.</li>
+        <li><strong>Iterative Improvement:</strong> Document new insights continuously, turning your code into a long-term memory for smarter development.</li>
+      </ul>
+      <p>This event is perfect for developers of all experience levels&mdash;whether you want to dig into code, ask questions, or just listen in.</p>
+      <h2>Details</h2>
+      <p><strong>Location:</strong> 7 N Cheyenne (Beside Atlas School, across from Gradient)</p>
+      <p><strong>Date &amp; Time:</strong> {meetupDate.toLocaleString('en-US', { dateStyle: 'long', timeStyle: 'short' })} CST</p>
+      <p><strong>Speaker:</strong> Sam Carlton</p>
+      <p>Bring a laptop if you&rsquo;d like to follow along. Pizza &amp; drinks will be provided (please RSVP so we can plan the order).</p>
+      <p>Expect a friendly, casual environment focused on practical knowledge you can apply to your projects right away. See you there&mdash;we can&rsquo;t wait to explore Cursor IDE together!</p>
+    </main>
+  </body>
+</html>
