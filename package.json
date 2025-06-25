@@ -10,10 +10,21 @@
 		"lint:changes": "pnpm biome:changes lint",
 		"format:changes": "pnpm biome:changes format --write",
 		"check:changes": "pnpm biome:changes check --apply",
-		"ai-lint:changes": "pnpm biome:changes lint --config-path ./biome.ai.jsonc"
+		"ai-lint:changes": "pnpm biome:changes lint --config-path ./biome.ai.jsonc",
+		"dev": "astro dev",
+		"build": "astro build",
+		"preview": "astro preview"
 	},
 	"keywords": [],
 	"author": "",
 	"license": "ISC",
-	"packageManager": "pnpm@10.11.0"
+	"packageManager": "pnpm@10.11.0",
+	"dependencies": {
+		"astro": "^5.10.1"
+	},
+	"devDependencies": {
+		"@biomejs/biome": "^2.0.5",
+		"@types/node": "^24.0.4",
+		"typescript": "^5.8.3"
+	}
 }
