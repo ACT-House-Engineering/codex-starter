@@ -11,6 +11,10 @@
 # relative to everything else
 git log -1
 
+# Create .env.local file with fake values to pass local CI Checks
+echo "NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY=pk_test_Y2xlcmsuZXhhbXBsZS5jb20k" > .env.local
+echo "CLERK_SECRET_KEY=sk_test_Y2xlcmsuZXhhbXBsZS5jb20k" >> .env.local
+echo "NEXT_PUBLIC_CONVEX_URL=https://example.convex.cloud" >> .env.local
 
 # update to latest pnpm
 curl -fsSL https://get.pnpm.io/install.sh | bash -
