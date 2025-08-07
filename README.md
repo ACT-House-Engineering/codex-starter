@@ -29,10 +29,26 @@ Ask
 Go through the codebase and find some tasks to clean up the code
 ```
 
+Ask
+```
+Find and fix a file to improve using docs/code-quality/twelve-factor.md
+```
+
+Ask
+```
+Find and fix a file to improve using docs/code-quality/pragmatic.md
+```
+
+Ask
+```
+Generate a mermaid diagram and docs for ...
+```
+
 Code
 ```
 Write test for and implement the follow feature: ...
 ```
+
 
 ## Helpful Links
 
