@@ -49,6 +49,13 @@ Code
 Write test for and implement the follow feature: ...
 ```
 
+Code
+```
+Go through the files in the locutus dir and try removing "as" type casting and "any" types so that we have better type safety. 
+
+If an "as" or "any" can't be removed add a comment explaining why
+```
+
 
 ## Helpful Links
 
