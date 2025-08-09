@@ -51,9 +51,12 @@ Write test for and implement the follow feature: ...
 
 Code
 ```
-Go through the files in the locutus dir and try removing "as" type casting and "any" types so that we have better type safety. 
+Go through the files in the tablecn dir and try removing "as" type casting and "any" types so that we have better type safety. 
 
-If an "as" or "any" can't be removed add a comment explaining why
+- If an "as" or "any" can't be removed add a comment explaining why
+- Be sure to correctly encode comment in JSX
+- Leave "as const" as that's very type safe
+- If you have to replace an instance of "as" with one or more instances of as then just leave it alone 
 ```
 
 
